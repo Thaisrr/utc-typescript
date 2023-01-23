@@ -1,0 +1,19 @@
+{
+  "name": "utc-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hello.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  },
+  "scripts": {
+    "version": "tsc -v",
+    "build" : "tsc index.ts",
+    "start" : "tsc index2.ts && node index2.js"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  }
+}
