@@ -48,4 +48,13 @@ async function getUsers() {
       console.log('finally')
     }
 }
-getUsers().then(() => console.log('finito'));
+getUsers();
+
+
+function getUsers2() {
+    fetch('https://jsonplaceholder.typicode.com/users')
+        .then(res => res.json())
+        .then(users => console.log(users))
+        .catch(e => console.log('ça marche pas'))
+        .finally(() => console.log('finit'))
+}
